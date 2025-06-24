@@ -35,14 +35,15 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            val navController = rememberNavController()
+            SumaDosNumeros()
+          /*  val navController = rememberNavController()
             NavHost(navController = navController, startDestination ="inicio" ){
                 composable("inicio"){PantallaInicio(navController)}
                 composable("detaller/{nombre}"){backStackEntry ->
                     val nombre = backStackEntry.arguments?.getString("nombre")?:"Invitado"
                     PantallaDetalle(navController,nombre)
                 }
-            }
+            }*/
         }
     }
 }
